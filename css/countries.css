@@ -1,0 +1,146 @@
+a{
+    text-decoration: none;
+    color: #f7f7f7;
+    -webkit-transition:  ease 0.5s;
+    -moz-transition:  ease 0.5s;
+    -ms-transition:  ease 0.5s;
+    -o-transition:  ease 0.5s;
+    transition:  ease 0.5s;
+}
+h1>a:hover{
+    color: #aaa;
+    -webkit-transition:  ease 0.5s;
+    -moz-transition:  ease 0.5s;
+    -ms-transition:  ease 0.5s;
+    -o-transition:  ease 0.5s;
+    transition:  ease 0.5s;
+}
+h4{
+    text-align: center;
+    margin: 3em 0;
+}
+/**************Для каждой страны***********/
+.pages_header_argentina{
+    background-image: url("../images/New-Buenos-Aires-Wallpaper.jpg");
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center;
+}
+.pages_header_brasil{
+    background-image: url("../images/Rio-de-Janeiro-Wallpaper-HD.jpg");
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center;
+}
+.pages_header_bahamas{
+    background-image: url("../images/bahamas.jpg");
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center;
+}
+.pages_header_bolivia{
+    background-image: url("../images/bolivia.jpg");
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center;
+}
+.pages_header_venezuela{
+    background-image: url("../images/venezuela.jpg");
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center;
+}
+.pages_header_guyana{
+    background-image: url("../images/guyana.jpg");
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center;
+}
+.pages_header_honduras{
+    background-image: url("../images/honduras.jpg");
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center;
+}
+.pages_header_dominicana{
+    background-image: url("../images/dominicana.jpg");
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center;
+}
+.pages_header_colombia{
+    background-image: url("../images/colombia.jpg");
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center;
+}
+.pages_header_costa-rica{
+    background-image: url("../images/costa-rica.jpg");
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center;
+}
+.pages_header_cuba{
+    background-image: url("../images/cuba1.jpg");
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center;
+}
+.pages_header_mexico{
+    background-image: url("../images/mexico.jpg");
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center;
+}
+.pages_header_nicaragua{
+    background-image: url("../images/nicaragua.jpg");
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center;
+}
+.pages_header_peru{
+    background-image: url("../images/peru1.jpg");
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center;
+}
+.pages_header_jamaica{
+    background-image: url("../images/jamaica.jpg");
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center;
+}
+.pages_header_panama{
+    background-image: url("../images/panama.jpg");
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center;
+}
+.pages_header_puerto-rico{
+    background-image: url("../images/puerto-rico.jpg");
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center;
+}
+.pages_header_equador{
+    background-image: url("../images/equador.jpg");
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center;
+}
+.pages_header_chile{
+    background-image: url("../images/chile.jpg");
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center;
+}
+.welcome_pages{
+    padding-top: 20%;
+    padding-bottom: 15%;
+    text-align: center;
+}
+hr.countries_nav_line{
+    margin-top: 20px;
+    border: 0;
+    height: 1px;
+}

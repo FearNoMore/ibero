@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Jura', sans-serif;
+}
+.reg_header{
+    width: 100%;
+    background-size:cover;
+    background-position:center;
+    background: #1e4188;
+}
+a{
+    text-decoration: none;
+    color: #f7f7f7;
+    -webkit-transition:  ease 0.5s;
+    -moz-transition:  ease 0.5s;
+    -ms-transition:  ease 0.5s;
+    -o-transition:  ease 0.5s;
+    transition:  ease 0.5s;
+}
+h1>a:hover{
+    color: #aaa !important;
+    -webkit-transition:  ease 0.5s;
+    -moz-transition:  ease 0.5s;
+    -ms-transition:  ease 0.5s;
+    -o-transition:  ease 0.5s;
+    transition:  ease 0.5s;
+    text-decoration: none !important;
+}
+h1>a:visited{
+    color: #f7f7f7 !important;
+    -webkit-transition:  ease 0.5s;
+    -moz-transition:  ease 0.5s;
+    -ms-transition:  ease 0.5s;
+    -o-transition:  ease 0.5s;
+    transition:  ease 0.5s;
+    text-decoration: none !important;
+}
+h4{
+    text-align: center;
+    margin: 3em 0;
+}
+.topnavmenu{
+    margin-left:70%;
+    float: left;
+
+}
+ul.topnav{
+    padding-top: 10px;
+    color:#761c19;
+    list-style-type:none;
+    position: relative;
+}
+/*ul.topnav>li.menu{
+    display: inline ;
+}*/
+ul.topnav>li{
+    display: inline-block;
+    margin-right:40px;
+}
+ul.topnav>li>a,ul.submenu>li>a{
+    text-decoration: none;
+    font-family: 'Marck Script', cursive;
+    color: #f7f7f7;
+    -webkit-transition:  ease-in-out 0.5s;
+    -moz-transition:  ease-in-out 0.5s;
+    -ms-transition:  ease-in-out 0.5s;
+    -o-transition:  ease-in-out 0.5s;
+    transition:  ease-in-out 0.5s;
+}
+ul.topnav>li>a:hover{
+    color: #478575;
+    text-shadow: 1px 0 1px #000;
+    -webkit-transition:  ease-in-out 0.5s;
+    -moz-transition:  ease-in-out 0.5s;
+    -ms-transition:  ease-in-out 0.5s;
+    -o-transition:  ease-in-out 0.5s;
+    transition:  ease-in-out 0.5s;
+}
+.welcome{
+    margin-top: 5%;
+    padding-bottom: 5%;
+    text-align: center;
+}
+.welcome>h1{
+    color: #f7f7f7;
+    font-weight:bolder;
+}
+.container{
+    background-color: rgba(27, 139,172 , 0.8);
+    color: #f7f7f7;
+    padding-bottom: 3em;
+    margin-top: 4em;
+    margin-bottom: 4em;
+    -webkit-border-radius:15px;
+    -moz-border-radius:15px;
+    border-radius:15px;
+    -webkit-box-shadow: 0 2px 3px 0 #000;
+    -moz-box-shadow: 0 2px 3px 0 #000;
+    box-shadow: 0 2px 3px 0 #000;
+}
+h2{
+    text-align: center;
+}
+form,.forgreg{
+    width: 80%;
+    min-width: 80%;
+    margin: 0 auto;
+}

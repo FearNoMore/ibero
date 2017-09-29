@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Страница регистрации</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/reg.css">
+    <link href="https://fonts.googleapis.com/css?family=Jura" rel="stylesheet">
+    <!--<link href="https://fonts.googleapis.com/css?family=Marck+Script&amp;subset=cyrillic" rel="stylesheet">-->
+</head>
+<body>
+<div class="reg_header">
+    <div class="main_header">
+        <div class="topnavmenu">
+            <ul class="topnav">
+                <li>
+                    <a href="index.php">На главную</a>
+                </li>
+                <li>
+                    <a href="#">День в истории</a>
+                </li>
+                <li>
+                    <a href="#">Блог</a>
+                </li>
+            </ul>
+
+        </div>
+        <div style="clear: both"></div>
+        <div class="welcome">
+            <h1 id="main_link"><a href="index.php">Iberoamerica.com</a></h1>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <h2>Добро пожаловать на страницу регистрации</h2>
+        <form method="post">
+            <div class="form-group">
+                <label for="name">Имя</label>
+                <input type="text" required name="name" class="form-control" placeholder="Имя" id="name"  /><br/>
+            </div>
+            <div class="form-group">
+                <label for="surname">Фамилия</label>
+                <input type="text"  required name="surname" class="form-control" placeholder="Фамилия"  id="surname" /><br/>
+            </div>
+            <div class="form-group">
+                <label for="login">Логин</label>
+                <input type="text" required name="login" class="form-control" placeholder="Логин" id="login" /><br/>
+            </div>
+            <div class="form-group">
+                <label for="email">email</label>
+                <input type="email" required name="email" class="form-control" placeholder="example@mail.ru" id="email" /><br/>
+            </div>
+            <div class="form-group">
+                <label for="password">Пароль</label>
+                <input type="password" required name="password" class="form-control" placeholder="Пароль" id="password" /><br/>
+            </div>
+            <div class="form-group">
+                <label for="repeat_password">Повторите пароль</label>
+                <input type="password" required name="repeat_password" class="form-control" placeholder="Повторите пароль" id="repeat_password" /><br/>
+            </div>
+                <!--<input type="submit" value="Зарегистрироваться" >-->
+            <button type="submit" class="btn btn-primary">Зарегистрироваться</button>
+        </form>
+</div>
+<?php if(isset($arr['text'])):?>
+<script>
+    alert("<?=$arr['text']?>");
+</script>
+<?php endif?>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/jquery-2.2.4.min.js"></script>
+</body>
+</html>

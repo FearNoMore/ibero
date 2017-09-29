@@ -1,0 +1,292 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Главная страница</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
+    <link href="https://fonts.googleapis.com/css?family=Jura" rel="stylesheet">
+    <!--<link href="https://fonts.googleapis.com/css?family=Marck+Script&amp;subset=cyrillic" rel="stylesheet">-->
+</head>
+<body>
+<div class="header">
+    <div class="main_header">
+        <?php if($arr['auth']):?>
+        <p class="welcome_word">Приветствую Вас,<?=$arr['name']?>!</p>
+        <p class="welcome_word"><a href="exit.php"><button id="exit">Выйти</button></a></p>
+        <?php else:?>
+        <p class="welcome_word">Здравствуй, гость!</p>
+        <p><a href="auth.php" id="auth_link">Авторизуйся</a> или <a href="reg.php" id="reg_link">Зарегистрируйся</a></p>
+        <?php endif?>
+        <div class="topnavmenu">
+            <ul class="topnav">
+                <li>
+                    <a href="#">Страны</a>
+                    <ul class="submenu">
+                        <li><a href="../iberoamericana/countries/argentina.php">Аргентина</a></li>
+                        <li><a href="../iberoamericana/countries/brasil.php">Бразилия</a></li>
+                        <li><a href="../iberoamericana/countries/bahamas.php">Багамы</a></li>
+                        <li><a href="../iberoamericana/countries/bolivia.php">Боливия</a></li>
+                        <li><a href="../iberoamericana/countries/venezuela.php">Венесуэла</a></li>
+                        <li><a href="../iberoamericana/countries/guyana.php">Гайана</a></li>
+                        <li><a href="../iberoamericana/countries/honduras.php">Гондурас</a></li>
+                        <li><a href="../iberoamericana/countries/dominicana.php">Доминикана</a></li>
+                        <li><a href="../iberoamericana/countries/colombia.php">Колумбия</a></li>
+                        <li><a href="../iberoamericana/countries/costa-rica.php">Коста-Рика</a></li>
+                        <li><a href="../iberoamericana/countries/cuba.php">Куба</a></li>
+                        <li><a href="../iberoamericana/countries/mexico.php">Мексика</a></li>
+                        <li><a href="../iberoamericana/countries/nicaragua.php">Никарагуа</a></li>
+                        <li><a href="../iberoamericana/countries/panama.php">Панама</a></li>
+                        <li><a href="../iberoamericana/countries/peru.php">Перу</a></li>
+                        <li><a href="../iberoamericana/countries/puerto-rico.php">Пуэрто-Рико</a></li>
+                        <li><a href="../iberoamericana/countries/equador.php">Эквадор</a></li>
+                        <li><a href="../iberoamericana/countries/chile.php">Чили</a></li>
+                        <li><a href="../iberoamericana/countries/jamaica.php">Ямайка</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Статьи</a>
+                </li>
+                <li>
+                    <a href="#">Блог</a>
+                </li>
+            </ul>
+
+        </div>
+        <a href="auth.php">
+            <button id="enter">
+                Войти
+            </button>
+        </a>
+        <div style="clear: both"></div>
+        <div class="welcome">
+            <h3>Добро пожаловать</h3>
+            <h2>на наш сайт</h2>
+            <h1>Iberoamerica.com</h1>
+        </div>
+    </div>
+</div>
+<div class="wrapper">
+    <div class="content">
+        <div class="blocks">
+            <div class="content_nav">
+                <ul class="navigation">
+                    <li><a href="#best">Достопримечательности</a></li>
+                    <li><a href="#sites">Интересные места</a></li>
+                    <li><a href="#articles">Недавние статьи</a></li>
+                    <li><a href="#multimedia">Мультимедиа</a></li>
+                </ul>
+                <div id="toTop">Наверх</div>
+                <hr id="nav_line">
+            </div>
+            <div class="intro">
+                <h2 id="thoughts"> Что такое Iberoamerica?</h2>
+                <hr id="intro_line">
+                <div class="intro_text">
+                    <p class="thoughts_text"><span>"Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        Aliquid, asperiores, beatae consequatur dicta eligendi enim eos ex itaque libero maiores
+                        minus natus nesciunt nulla provident sit! Consectetur illum officia recusandae!</span>
+                        <span>At beatae consectetur cumque ea eaque est labore nam nobis nulla, perferendis placeat
+                        provident qui rem repellendus reprehenderit tempore temporibus! Deserunt explicabo ipsa
+                        nesciunt quam quidem? Magni officia ratione velit.</span><span>Alias aliquid blanditiis
+                        ea excepturi hic necessitatibus porro repellendus temporibus? Architecto dignissimos error
+                        excepturi illum laborum laudantium molestias natus odio officiis, possimus quod velit.
+                        Beatae iusto maiores officiis temporibus ut.</span>
+                    </p>
+                    <p class="thoughts_text"><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        Aliquid, asperiores, beatae consequatur dicta eligendi enim eos ex itaque libero maiores
+                        minus natus nesciunt nulla provident sit! Consectetur illum officia recusandae!</span>
+                        <span>At beatae consectetur cumque ea eaque est labore nam nobis nulla, perferendis placeat
+                        provident qui rem repellendus reprehenderit tempore temporibus! Deserunt explicabo ipsa
+                        nesciunt quam quidem? Magni officia ratione velit.</span><span>Alias aliquid blanditiis
+                        ea excepturi hic necessitatibus porro repellendus temporibus? Architecto dignissimos error
+                        excepturi illum laborum laudantium molestias natus odio officiis, possimus quod velit.
+                        Beatae iusto maiores officiis temporibus ut.</span>
+                    </p>
+                    <p class="thoughts_text"><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        Aliquid, asperiores, beatae consequatur dicta eligendi enim eos ex itaque libero maiores
+                        minus natus nesciunt nulla provident sit! Consectetur illum officia recusandae!</span>
+                        <span>At beatae consectetur cumque ea eaque est labore nam nobis nulla, perferendis placeat
+                        provident qui rem repellendus reprehenderit tempore temporibus! Deserunt explicabo ipsa
+                        nesciunt quam quidem? Magni officia ratione velit.</span><span>Alias aliquid blanditiis
+                        ea excepturi hic necessitatibus porro repellendus temporibus? Architecto dignissimos error
+                        excepturi illum laborum laudantium molestias natus odio officiis, possimus quod velit.
+                        Beatae iusto maiores officiis temporibus ut ..."</span><a href="intro.php"> Читать блог >></a>
+                    </p>
+                </div>
+            </div>
+            <div class="best_places" id="best">
+                <h2 id="places">Самые популярные места Латинской Америки</h2>
+                <hr id="places_line">
+                <!--<div class="best_places_slider">
+                </div>-->
+                <div class="best_places_slider">
+                    <div class="sl">
+						<div class="sl__slide">
+							<a href="#">
+								<img src="images/slider/sl1.jpg" alt="Картинка 1" class="sl__img">
+								<div class="sl__text">
+									<h3 class="sl__zag">Слайд 1</h3>
+									<p class="sl__desc">Описание слайда1</p>
+								</div>
+							</a>
+						</div>
+						<div class="sl__slide"><a href="#">
+							<img src="images/slider/sl2.jpg" alt="Картинка 2" class="sl__img">
+							<div class="sl__text">
+								<h3 class="sl__zag">Слайд 2</h3>
+								<p class="sl__desc">Описание слайда2</p>
+							</div></a>
+						</div>
+						<div class="sl__slide"><a href="#">
+							<img src="images/slider/sl3.jpg" alt="Картинка 3" class="sl__img">
+							<div class="sl__text">
+								<h3 class="sl__zag">Слайд 3</h3>
+								<p class="sl__desc">Описание слайда3</p>
+							</div></a>
+						</div>
+						<div class="sl__slide"><a href="#">
+							<img src="images/slider/sl4.jpg" alt="Картинка 4" class="sl__img">
+							<div class="sl__text">
+								<h3 class="sl__zag">Слайд 4</h3>
+								<p class="sl__desc">Описание слайда4</p>
+							</div></a>
+						</div>
+						<div class="sl__slide"><a href="#">
+							<img src="images/slider/sl5.jpg" alt="Картинка 5" class="sl__img">
+							<div class="sl__text">
+								<h3 class="sl__zag">Слайд 5</h3>
+								<p class="sl__desc">Описание слайда5</p>
+							</div></a>
+						</div>
+						<div class="sl__slide"><a href="#">
+							<img src="images/slider/sl6.jpg" alt="Картинка 6" class="sl__img">
+							<div class="sl__text">
+								<h3 class="sl__zag">Слайд 6</h3>
+								<p class="sl__desc">Описание слайда6</p>
+							</div></a>
+						</div>
+						<div class="sl__slide"><a href="#">
+							<img src="images/slider/sl7.jpg" alt="Картинка 7" class="sl__img">
+							<div class="sl__text">
+								<h3 class="sl__zag">Слайд 7</h3>
+								<p class="sl__desc">Описание слайда7</p>
+							</div></a>
+						</div>
+						<div class="sl__slide"><a href="#">
+							<img src="images/slider/sl8.jpg" alt="Картинка 8" class="sl__img">
+							<div class="sl__text">
+								<h3 class="sl__zag">Слайд 8</h3>
+								<p class="sl__desc">Описание слайда8</p>
+							</div></a>
+						</div>
+						<div class="sl__slide"><a href="#">
+							<img src="images/slider/sl9.jpg" alt="Картинка 9" class="sl__img">
+							<div class="sl__text">
+								<h3 class="sl__zag">Слайд 9</h3>
+								<p class="sl__desc">Описание слайда9</p>
+							</div></a>
+						</div>
+						<div class="sl__slide"><a href="#">
+							<img src="images/slider/sl10.jpg" alt="Картинка 10" class="sl__img">
+							<div class="sl__text">
+								<h3 class="sl__zag">Слайд 10</h3>
+								<p class="sl__desc">Описание слайда10</p>
+							</div></a>
+						</div>
+						<div class="sl__slide"><a href="#">
+							<img src="images/slider/sl11.jpg" alt="Картинка 11" class="sl__img">
+							<div class="sl__text">
+								<h3 class="sl__zag">Слайд 11</h3>
+								<p class="sl__desc">Описание слайда11</p>
+							</div></a>
+						</div>
+						<div class="sl__slide"><a href="#">
+							<img src="images/slider/sl12.jpg" alt="Картинка 12" class="sl__img">
+							<div class="sl__text">
+								<h3 class="sl__zag">Слайд 12</h3>
+								<p class="sl__desc">Описание слайда12</p>
+							</div></a>
+						</div>
+						<div class="sl__slide"><a href="#">
+							<img src="images/slider/sl13.jpg" alt="Картинка 13" class="sl__img">
+							<div class="sl__text">
+								<h3 class="sl__zag">Слайд 13</h3>
+								<p class="sl__desc">Описание слайда13</p>
+							</div></a>
+						</div>
+						<div class="sl__slide"><a href="#">
+							<img src="images/slider/sl14.jpg" alt="Картинка 14" class="sl__img">
+							<div class="sl__text">
+								<h3 class="sl__zag">Слайд 14</h3>
+								<p class="sl__desc">Описание слайда14</p>
+							</div></a>
+						</div>
+						<div class="sl__slide"><a href="#">
+							<img src="images/slider/sl15.jpg" alt="Картинка 15" class="sl__img">
+							<div class="sl__text">
+								<h3 class="sl__zag">Слайд 15</h3>
+								<p class="sl__desc">Описание слайда15</p>
+							</div></a>
+						</div>
+						<div class="sl__slide">
+							<a href="#"><img src="images/slider/sl16.jpg" alt="Картинка 16" class="sl__img">
+							<div class="sl__text">
+								<h3 class="sl__zag">Слайд 16</h3>
+								<p class="sl__desc">Описание слайда16</p>
+							</div>
+							</a>
+						</div>
+					</div>
+					</div>
+            </div>
+            <div class="sites" id="sites">
+                <h2 id="places_of_interest">Другие интересные места</h2>
+                <hr id="places_of_interest_line">
+                <div class="interest">
+                    <div class="siteseeing" id="iguazu"><span>Водопады Игуасу</span></div>
+                    <div class="siteseeing" id="marble"><span>Мраморные пещеры</span></div>
+                    <div class="siteseeing" id="guatape"><span>Пьедра-де-Гуатапе</span></div>
+                    <div class="siteseeing" id="salta"><span>Сальта</span></div>
+                    <div class="siteseeing" id="cemetery"><span>Цветные кладбища Гватемалы</span></div>
+                    <div class="siteseeing" id="aliende"><span>Тула-де-Альенде</span></div>
+                    <div class="siteseeing" id="sonora"><span>Колдовской рынок Сонора</span></div>
+                    <div class="siteseeing" id="color_mount"><span>Серранья-дель-Агуараге</span></div>
+                </div>
+            </div>
+                <div style="clear: both"></div>
+            <div class="recent_articles" id="articles">
+                <h2 id="articles_header">Статьи</h2>
+                <hr id="articles_line">
+                <?php $articles = getMainPageArticles();?>
+                <?php foreach($articles as $article):?>
+                <div class="article">
+                    <p class="art_date"><?=$article['date']?></p>
+                    <h3><?=$article['title']?></h3>
+                    <p><?=$article['text']?></p>
+                </div>
+                <?php endforeach;?>
+                <a href="articles.php">Все статьи >>></a>
+            </div>
+            <div class="multimedia" id="multimedia">
+                <h2 id="mheader">Мультимедиа</h2>
+                <hr id="mheader_line">
+                <a href="artgallery.php"><div class="multi" id="artgallery"><h4 class="multiheader">Искусство</h4></div></a>
+                <a href="gallery.php" ><div class="multi" id="photogallery"><h4 class="multiheader">Фотогалерея</h4></div></a>
+                <a href="#" ><div class="multi" id="videogallery"><h4 class="multiheader">Видео</h4></div></a>
+            </div>
+
+            <div style="clear: both"></div>
+        </div>
+    </div>
+</div>
+<!--<script src="js/jquery-2.2.4.min.js"></script>
+<script src="js/slick.min.js"></script>
+<script src="js/script.js"></script>-->
+<!--
+</body>
+</html>-->
